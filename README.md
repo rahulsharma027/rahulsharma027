@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 <p align="center">
 <!--   <a href="https://github.com/DenverCoder1/readme-typing-svg"> -->
-    <img src="https://readme-typing-svg.herokuapp.com?color=E22FE4&width=380&height=28&lines=Hi👋+I'm+Rahul+Sharma..;Fresher+Graduate+;..;Learning+Software+Development..;Empowering+Others;Nice+To+Meet+You+....&center=true"></a></p>
+    <img src="https://readme-typing-svg.herokuapp.com?color=E22FE4&width=380&height=28&lines=Hi👋+I'm+Rahul+Sharma..;This+is+the+Beginning+of+my+journey..;Fresher+Graduate+;..;Learning+Software+Development..;Empowering+Others;Nice+To+Meet+You+....&center=true"></a></p>
     
 
     
@@ -100,11 +100,11 @@ Here are some ideas to get you started:
   </a>
 </p>
 
-# 📊 GitHub Stats:
+# 📊 GitHub Stats: (I'm a Beginner so there is still room for improvement)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=rahulsharma027&theme=radical&border=false&include_all_commits=true&count_private=true&layout=compact)
 ![](https://github-readme-stats.vercel.app/api?username=rahulsharma027&theme=radical&_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=rahulsharma027&theme=radical&hide_border=false)
 <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" alt="About Me GIF" width="180px">
 <br/>
-## 🏆 GitHub Trophies
+## 🏆 GitHub Trophies (Not many but I'm getting them all)
 ![](https://github-profile-trophy.vercel.app/?username=rahulsharma027&theme=radical&no-frame=false&no-bg=true&margin-w=4)
