@@ -18,6 +18,10 @@ Here are some ideas to get you started:
     
 ## YouTube 
 [My YouTube Channel](https://www.youtube.com/channel/UCxiHeBd9y5Om6v646p04mng)
+
+
+## Linkedin
+[Linkedin Profile](https://www.linkedin.com/in/rahul-sharma-6931b914b/)
     
 # 🖥️ Technical Skills: 
 <p align="left">
