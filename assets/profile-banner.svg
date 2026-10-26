@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="banner-title banner-description">
+  <title id="banner-title">Rahul Sharma — Software engineer, Go and Java, cloud platforms</title>
+  <desc id="banner-description">A dark banner with lime lettering and a pixel robot following a path through a maze. Build. Debug. Find a better path.</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#d7f7ac" stroke-opacity="0.045"/>
+    </pattern>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151c17"/>
+      <stop offset="1" stop-color="#0d1210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="350" rx="12" fill="url(#background)"/>
+  <rect width="1200" height="350" rx="12" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="348" rx="11" fill="none" stroke="#c7edaa" stroke-opacity="0.14" stroke-width="2"/>
+  <g font-family="Consolas, 'Liberation Mono', monospace">
+    <path d="M48 50h10v10H48z M63 50h10v10H63z M78 50h10v10H78z" fill="#cef38a"/>
+    <text x="107" y="59" fill="#a3b49f" font-size="13" letter-spacing="2.5">PLAYER PROFILE / 027</text>
+    <text x="48" y="144" fill="#f0f4e9" font-size="57" font-weight="700" letter-spacing="-2">RAHUL SHARMA</text>
+    <text x="51" y="180" fill="#cef38a" font-size="15" letter-spacing="2.5">SOFTWARE ENGINEER / GO · JAVA · CLOUD</text>
+    <text x="51" y="232" fill="#a8b5a4" font-size="19">Build. Debug. Find a better path.</text>
+    <path d="M51 274h8v8h-8z" fill="#cef38a"/>
+    <text x="72" y="282" fill="#d2dbc9" font-size="12" letter-spacing="1.5">OPEN TO NEW OPPORTUNITIES</text>
+    <text x="1136" y="321" text-anchor="end" fill="#6a7d68" font-size="10" letter-spacing="2">THE NEXT CHAPTER</text>
+  </g>
+  <g transform="translate(816 55)" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M0 0h280v224H0V56 M56 0v56h56v56H56v56H0 M168 0v56h56 M280 56v56h-56v56h-56v56 M168 56v56h-56 M56 224v-56h56v56 M224 224v-56h56" stroke="#b6c69b" stroke-opacity="0.24" stroke-width="4"/>
+    <path d="M0 28h28v112h112v-56h56v56h-56v56h56v28" stroke="#cef38a" stroke-width="3" stroke-dasharray="5 9"/>
+    <rect x="185" y="213" width="22" height="22" fill="#cef38a" stroke="#101610" stroke-width="3"/>
+    <g transform="translate(7 119)" stroke="none" shape-rendering="crispEdges">
+      <path d="M6 0h30v6h6v24h-6v6H6v-6H0V6h6z" fill="#cef38a"/>
+      <path d="M6 9h30v18H6z" fill="#172418"/>
+      <path d="M12 15h6v6h-6z M24 15h6v6h-6z" fill="#cef38a"/>
+      <path d="M18 -9h6V0h-6z M-6 12h6v12h-6z M42 12h6v12h-6z M6 36h6v6H6z M30 36h6v6h-6z" fill="#ced7ba"/>
+      <path d="M18 -15h6v6h-6z" fill="#e5b577"/>
+    </g>
+  </g>
+</svg>

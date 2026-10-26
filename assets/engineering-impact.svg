@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="205" viewBox="0 0 1000 205" role="img" aria-labelledby="title description">
+  <title id="title">Engineering impact</title>
+  <desc id="description">Experience highlights from Rahul Sharma's resume: 40% lower system latency through architectural improvements; 1,000+ developer accounts synchronized; GraphQL publishing across four services.</desc>
+  <rect x="1" y="1" width="998" height="203" rx="12" fill="#121a15" stroke="#31402d"/>
+  <g font-family="Consolas, Liberation Mono, monospace">
+    <text x="32" y="38" fill="#cef38a" font-size="13" letter-spacing="2">ENGINEERING / IMPACT</text>
+    <text x="32" y="103" fill="#eef4e8" font-size="44" font-weight="700">40%</text>
+    <text x="32" y="135" fill="#a6b4a0" font-size="13">LOWER SYSTEM LATENCY</text>
+    <text x="32" y="163" fill="#a6b4a0" font-size="11">Architectural improvements</text>
+    <text x="355" y="103" fill="#eef4e8" font-size="44" font-weight="700">1,000+</text>
+    <text x="355" y="135" fill="#a6b4a0" font-size="13">DEVELOPER ACCOUNTS</text>
+    <text x="355" y="163" fill="#a6b4a0" font-size="11">Identity synchronization</text>
+    <text x="692" y="103" fill="#eef4e8" font-size="44" font-weight="700">4</text>
+    <text x="692" y="135" fill="#a6b4a0" font-size="13">CONNECTED SERVICES</text>
+    <text x="692" y="163" fill="#a6b4a0" font-size="11">GraphQL publishing workflow</text>
+  </g>
+</svg>
