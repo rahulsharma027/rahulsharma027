@@ -38,8 +38,8 @@ def main():
         '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title description">',
         '<title id="title">Rahul Sharma technology loadout</title>',
         '<desc id="description">Go, Java, Python, Spring Boot, Kubernetes, Docker, AWS, Jenkins, GraphQL, Grafana, React, and Linux.</desc>',
-        '<rect x="1" y="1" width="998" height="258" rx="12" fill="#121a15" stroke="#31402d"/>',
-        '<text x="32" y="38" fill="#cef38a" font-family="Consolas, Liberation Mono, monospace" font-size="13" letter-spacing="2">TECH / EQUIPPED</text>',
+        '<rect x="1" y="1" width="998" height="258" rx="12" fill="#0d1117" stroke="#30363d"/>',
+        '<text x="32" y="38" fill="#58a6ff" font-family="Consolas, Liberation Mono, monospace" font-size="13" letter-spacing="2">TECH / EQUIPPED</text>',
     ]
     for index, (slug, label, source) in enumerate(ICONS):
         target = LOGOS / f"{slug}.svg"
@@ -54,16 +54,16 @@ def main():
             raise ValueError(f"Unexpected non-vector content in {target.name}")
         col, row = index % 6, index // 6
         center, y = 112 + col * 155, 66 + row * 91
-        nested = ET.Element("svg", {"x": str(center - 20), "y": str(y), "width": "40", "height": "40", "viewBox": original.get("viewBox", "0 0 24 24"), "fill": "#d7e8c9"})
+        nested = ET.Element("svg", {"x": str(center - 20), "y": str(y), "width": "40", "height": "40", "viewBox": original.get("viewBox", "0 0 24 24"), "fill": "#c9d1d9"})
         for child in original:
             if child.tag.split('}')[-1] not in ("title", "desc", "metadata"):
                 nested.append(deepcopy(child))
         # Use the light wordmark lettering for AWS against the dark strip.
         for element in nested.iter():
             if element.get("fill", "").lower() == "#252f3e":
-                element.set("fill", "#e7ede2")
+                element.set("fill", "#e6edf3")
         parts.append(ET.tostring(nested, encoding="unicode"))
-        parts.append(f'<text x="{center}" y="{y + 63}" text-anchor="middle" fill="#c5d1bd" font-size="12" font-family="Consolas, Liberation Mono, monospace">{escape(label)}</text>')
+        parts.append(f'<text x="{center}" y="{y + 63}" text-anchor="middle" fill="#8b949e" font-size="12" font-family="Consolas, Liberation Mono, monospace">{escape(label)}</text>')
     parts.append("</svg>\n")
     output = "".join(parts)
     ET.fromstring(output)

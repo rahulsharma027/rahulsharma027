@@ -24,10 +24,11 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-INK = "#eef4e8"
-MUTED = "#a6b4a0"
-LIME = "#cef38a"
-COLORS = ["#cef38a", "#8ad7c2", "#d7b987", "#9ab6ea", "#c5a1d4", "#ed9d8a", "#879485"]
+# GitHub-inspired dark neutrals, blue links, and blue/purple chart accents.
+INK = "#e6edf3"
+MUTED = "#8b949e"
+ACCENT = "#58a6ff"
+COLORS = ["#58a6ff", "#bc8cff", "#79c0ff", "#d2a8ff", "#a5d6ff", "#8b949e", "#c9d1d9"]
 
 
 def api(path: str):
@@ -93,14 +94,14 @@ def shell(title, description, height, content):
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="{height}" viewBox="0 0 1000 {height}" role="img" aria-labelledby="title description">'
         f'<title id="title">{escape(title)}</title><desc id="description">{escape(description)}</desc>'
-        f'<rect x="1" y="1" width="998" height="{height - 2}" rx="12" fill="#121a15" stroke="#31402d"/>'
+        f'<rect x="1" y="1" width="998" height="{height - 2}" rx="12" fill="#0d1117" stroke="#30363d"/>'
         f'<g font-family="Consolas, Liberation Mono, monospace">{content}</g></svg>\n'
     )
 
 
 def snapshot(data):
     languages = len([value for value in data["language_bytes"].values() if value > 0])
-    parts = [text(32, 38, "GITHUB / PUBLIC INVENTORY", 13, LIME, extra='letter-spacing="2"')]
+    parts = [text(32, 38, "GITHUB / PUBLIC INVENTORY", 13, ACCENT, extra='letter-spacing="2"')]
     for x, value, label in [(32, data["public_repos"], "PUBLIC REPOS"), (350, data["original_repos"], "NON-FORK REPOS"), (668, languages, "CODE LANGUAGES")]:
         parts.extend([text(x, 102, value, 44, INK, "700"), text(x, 132, label, 12, MUTED, extra='letter-spacing="1"')])
     parts.append(text(32, 175, f"Public repositories only  /  Updated {data['date']} UTC", 12, MUTED))
@@ -112,7 +113,7 @@ def language_widget(data):
     if len(pairs) > 6:
         pairs = pairs[:6] + [("Other", sum(value for _, value in pairs[6:]))]
     total, x = sum(value for _, value in pairs), 32.0
-    parts = [text(32, 38, "LANGUAGE LOADOUT / PUBLIC CODE", 13, LIME, extra='letter-spacing="2"')]
+    parts = [text(32, 38, "LANGUAGE LOADOUT / PUBLIC CODE", 13, ACCENT, extra='letter-spacing="2"')]
     for index, (name, value) in enumerate(pairs):
         width = 936 * value / total
         parts.append(f'<rect x="{x:.4f}" y="61" width="{width:.4f}" height="13" fill="{COLORS[index]}"/>')
@@ -129,11 +130,11 @@ def language_widget(data):
 
 
 def recent_widget(data):
-    parts = [text(32, 38, "RECENT BUILDS / LAST PUBLIC PUSH", 13, LIME, extra='letter-spacing="2"')]
+    parts = [text(32, 38, "RECENT BUILDS / LAST PUBLIC PUSH", 13, ACCENT, extra='letter-spacing="2"')]
     for index, repo in enumerate(data["recent"]):
         y, name = 80 + index * 42, repo["name"]
         display_name = name if len(name) <= 43 else name[:40] + "..."
-        parts.extend([text(32, y, f"0{index + 1}", 12, LIME), text(77, y, display_name, 15), text(680, y, repo.get("language") or "No language", 12, MUTED), text(842, y, repo["pushed_at"][:10], 12, MUTED)])
+        parts.extend([text(32, y, f"0{index + 1}", 12, ACCENT), text(77, y, display_name, 15), text(680, y, repo.get("language") or "No language", 12, MUTED), text(842, y, repo["pushed_at"][:10], 12, MUTED)])
     if not data["recent"]:
         parts.append(text(32, 85, "No public project pushes available yet.", 14, MUTED))
     parts.append(text(32, 264, f"Forks, archived repos and profile repo excluded. Updated {data['date']} UTC.", 11, MUTED))
@@ -147,14 +148,14 @@ def mobile_shell(title, description, height, content):
 
 def mobile_widgets(data):
     languages = [(name, value) for name, value in sorted(data['language_bytes'].items(), key=lambda item: (-item[1], item[0])) if value > 0]
-    inventory = [text(28, 40, "GITHUB / PUBLIC INVENTORY", 18, LIME)]
+    inventory = [text(28, 40, "GITHUB / PUBLIC INVENTORY", 18, ACCENT)]
     for y, value, label in [(105, data['public_repos'], 'Public repositories'), (175, data['original_repos'], 'Non-fork repositories'), (245, len(languages), 'Code languages')]:
         inventory.extend([text(28, y, value, 39, INK, '700'), text(125, y - 5, label, 21, MUTED)])
     inventory.append(text(28, 295, f"Updated {data['date']} UTC", 17, MUTED))
     if len(languages) > 6:
         languages = languages[:6] + [('Other', sum(value for _, value in languages[6:]))]
     total = sum(value for _, value in languages)
-    language_parts = [text(28, 40, "LANGUAGE LOADOUT / PUBLIC CODE", 17, LIME)]
+    language_parts = [text(28, 40, "LANGUAGE LOADOUT / PUBLIC CODE", 17, ACCENT)]
     x = 28.0
     for index, (name, value) in enumerate(languages):
         width = 544 * value / total
@@ -165,7 +166,7 @@ def mobile_widgets(data):
     if not languages:
         language_parts.append(text(28, 123, "No public language data yet.", 19, MUTED))
     language_parts.extend([text(28, 376, 'Code bytes; owned public repos; forks excluded.', 16, MUTED), text(28, 402, 'Not a skill rating or work experience measure.', 16, MUTED), text(28, 431, f"Updated {data['date']} UTC", 16, MUTED)])
-    recent = [text(28, 40, 'RECENT BUILDS / LAST PUBLIC PUSH', 17, LIME)]
+    recent = [text(28, 40, 'RECENT BUILDS / LAST PUBLIC PUSH', 17, ACCENT)]
     for index, repo in enumerate(data['recent']):
         y = 90 + index * 75
         name = repo['name'] if len(repo['name']) <= 37 else repo['name'][:34] + '...'

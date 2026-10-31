@@ -2,26 +2,26 @@
   <title id="title">Rahul Sharma — Software engineer</title>
   <desc id="description">Go, Java, API platforms. Build. Debug. Find a better path. Open to opportunities. A pixel robot follows a maze path.</desc>
   <defs>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#d7f7ac" stroke-opacity=".045"/></pattern>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#c9d1d9" stroke-opacity=".045"/></pattern>
   </defs>
-  <rect x="1" y="1" width="598" height="368" rx="12" fill="#121a15" stroke="#31402d"/>
+  <rect x="1" y="1" width="598" height="368" rx="12" fill="#0d1117" stroke="#30363d"/>
   <rect x="1" y="1" width="598" height="368" rx="12" fill="url(#grid)"/>
   <g font-family="Consolas, Liberation Mono, monospace">
-    <text x="28" y="45" font-size="15" fill="#a6b4a0" letter-spacing="2">PLAYER PROFILE / 027</text>
-    <text x="25" y="119" font-size="52" fill="#f0f4e9" font-weight="700" letter-spacing="-2">RAHUL SHARMA</text>
-    <text x="28" y="160" font-size="20" fill="#cef38a" letter-spacing="2">SOFTWARE ENGINEER</text>
-    <text x="28" y="191" font-size="17" fill="#a6b4a0">GO · JAVA · API PLATFORMS</text>
-    <text x="28" y="245" font-size="20" fill="#d2dbc9">Build. Debug.</text>
-    <text x="28" y="275" font-size="20" fill="#d2dbc9">Find a better path.</text>
-    <path d="M28 318h8v8h-8z" fill="#cef38a"/>
-    <text x="49" y="327" font-size="15" fill="#cef38a">OPEN TO OPPORTUNITIES</text>
+    <text x="28" y="45" font-size="15" fill="#8b949e" letter-spacing="2">PLAYER PROFILE / 027</text>
+    <text x="25" y="119" font-size="52" fill="#e6edf3" font-weight="700" letter-spacing="-2">RAHUL SHARMA</text>
+    <text x="28" y="160" font-size="20" fill="#58a6ff" letter-spacing="2">SOFTWARE ENGINEER</text>
+    <text x="28" y="191" font-size="17" fill="#8b949e">GO · JAVA · API PLATFORMS</text>
+    <text x="28" y="245" font-size="20" fill="#c9d1d9">Build. Debug.</text>
+    <text x="28" y="275" font-size="20" fill="#c9d1d9">Find a better path.</text>
+    <path d="M28 318h8v8h-8z" fill="#58a6ff"/>
+    <text x="49" y="327" font-size="15" fill="#58a6ff">OPEN TO OPPORTUNITIES</text>
   </g>
-  <g transform="translate(440 234)" fill="none" stroke="#819775" stroke-opacity=".6" stroke-width="3">
+  <g transform="translate(440 234)" fill="none" stroke="#8b949e" stroke-opacity=".6" stroke-width="3">
     <path d="M0 0h112v84H0V28 M28 0v28h28v28H28v28 M84 0v28h28 M84 56v28"/>
-    <path d="M0 14h14v56h56V42h28" stroke="#cef38a" stroke-dasharray="4 6"/>
+    <path d="M0 14h14v56h56V42h28" stroke="#58a6ff" stroke-dasharray="4 6"/>
   </g>
-  <g transform="translate(440 283)" fill="#cef38a" shape-rendering="crispEdges">
-    <path d="M4 0h24v4h4v20h-4v4H4v-4H0V4h4z"/><path d="M4 8h24v12H4z" fill="#172418"/>
-    <path d="M8 12h4v4H8z M20 12h4v4h-4z M14 -8h4V0h-4z"/><path d="M14 -12h4v4h-4z" fill="#e5b577"/>
+  <g transform="translate(440 283)" fill="#58a6ff" shape-rendering="crispEdges">
+    <path d="M4 0h24v4h4v20h-4v4H4v-4H0V4h4z"/><path d="M4 8h24v12H4z" fill="#161b22"/>
+    <path d="M8 12h4v4H8z M20 12h4v4h-4z M14 -8h4V0h-4z"/><path d="M14 -12h4v4h-4z" fill="#bc8cff"/>
   </g>
 </svg>
